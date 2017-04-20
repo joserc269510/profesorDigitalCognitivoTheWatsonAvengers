@@ -1,0 +1,13 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: profesorDigitalCognitivoTheWatsonAvengers
+  host: profesorDigitalCognitivoTheWatsonAvengers
+  disk_quota: 1024M
+  services:
+  - ElephantSQL-BaseDatos
+  - SpeechProfesor
+  - VisualProfesor
+  - TraductorProfesor
