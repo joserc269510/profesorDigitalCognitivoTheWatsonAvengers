@@ -33,6 +33,9 @@
                 <artifactId>geronimo-servlet_3.0_spec</artifactId>
                 <version>1.0</version>
             </dependency>
+            
+
+                    
         </dependencies>
     </dependencyManagement>
 
@@ -41,21 +44,6 @@
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-servlet_3.0_spec</artifactId>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-        	<groupId>com.ibm.watson.developer_cloud</groupId>
-        	<artifactId>speech-to-text</artifactId>
-        	<version>3.7.2</version>
-        </dependency>
-        <dependency>
-        	<groupId>com.ibm.watson.developer_cloud</groupId>
-        	<artifactId>language-translator</artifactId>
-        	<version>3.7.2</version>
-        </dependency>
-        <dependency>
-        	<groupId>com.ibm.watson.developer_cloud</groupId>
-        	<artifactId>visual-recognition</artifactId>
-        	<version>3.7.2</version>
         </dependency>
 
 
@@ -99,8 +87,6 @@
     <artifactId>postgresql</artifactId>
     <version>42.0.0</version>
 </dependency>
-
-
 
 
 
