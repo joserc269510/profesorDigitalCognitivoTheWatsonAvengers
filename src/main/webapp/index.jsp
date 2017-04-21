@@ -1,8 +1,9 @@
+<%@ page language="java" contentType="text/html" %>
 <!DOCTYPE  html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Shinra</title>
+		<title>PROYECTO XE</title>
 		
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
@@ -132,27 +133,28 @@
 			
 				
 			</div>
-		
 			<div id="main">
+			  <form name="PruebaSpeech" action="generarSpeech" method="post">
+			    <div>
+			      <h2>Prueba SPEECH</h2>
+			      <div>
+			        <table>
+			          <tr>
+			            <td ><h3>Pulse el boton para empezar a grabar</h3></td>
+                      </tr>
+                      <tr>
+			            <td ><textarea id="txtNombre" name="txtNombre" style="width:700px;height:200px">${texto}</textarea></td>
+                        <td  ><button class="submit" type="submit">Grabar</button></td>
+		              </tr>
+		            </table>
+		          </div>
+		        </div>
+		      </form>
+		  </div>
+<div id="footer">
 				
 				
-				<div id="content">
-					
-						
-						
-	
-	
-	
-				</div>
-				
-	
-	
-			</div>
-			
-			<div id="footer">
-				
-				
-				<ul id="footer-cols">
+	  <ul id="footer-cols">
 					<li class="col">
 						<h6>About the theme</h6>
 					</li>
