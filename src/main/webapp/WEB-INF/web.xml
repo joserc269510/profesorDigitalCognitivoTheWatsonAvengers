@@ -20,4 +20,16 @@
 		<servlet-name>ServletSpeech</servlet-name>
 		<url-pattern>/generarSpeech</url-pattern>
 	</servlet-mapping>
+	
+	
+	<servlet>
+		<description>Registrar estudiante</description>
+		<servlet-name>ServletRegistrarEstudiante</servlet-name>
+		<servlet-class>Servlet.ServletRegistrarEstudiante</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ServletRegistrarEstudiante</servlet-name>
+		<url-pattern>/registrarEstudiante</url-pattern>
+	</servlet-mapping>
 </web-app>
