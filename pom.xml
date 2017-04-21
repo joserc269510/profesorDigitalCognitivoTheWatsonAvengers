@@ -99,6 +99,11 @@
     <artifactId>commons-fileupload</artifactId>
     <version>1.3.2</version>
 </dependency>
+    	<dependency>
+    		<groupId>com.ibm.watson.developer_cloud</groupId>
+    		<artifactId>speech-to-text</artifactId>
+    		<version>3.4.0</version>
+    	</dependency>
     </dependencies>
 
     <build>
