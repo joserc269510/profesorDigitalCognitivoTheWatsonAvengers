@@ -47,8 +47,7 @@ public class ServletRegistrarEstudiante extends HttpServlet {
 	   	 
 	   Estudiante estudiante= new Estudiante();
 	   estudiante.registrarEstudiante(numeroIdentificacion, numeroCarnet, fechaNacimiento, apellido1, apellido2, nombre, email);
-	       
-	   	 response.setContentType("text/html");
+	   response.setContentType("text/html");
 	}
 
 }
