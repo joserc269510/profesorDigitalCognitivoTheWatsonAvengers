@@ -1,6 +1,8 @@
 package Servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -47,7 +49,17 @@ public class ServletRegistrarEstudiante extends HttpServlet {
 	   	 
 	   Estudiante estudiante= new Estudiante();
 	   estudiante.registrarEstudiante(numeroIdentificacion, numeroCarnet, fechaNacimiento, apellido1, apellido2, nombre, email);
+	   response(response, "Registro Completo");
 	   response.setContentType("text/html");
 	}
-
-}
+	
+	private void response(HttpServletResponse resp, String msg)
+			throws IOException {
+		PrintWriter out = resp.getWriter();
+		out.println("<html>");
+		out.println("<body>");
+		out.println("<t1>" + msg + "</t1>");
+		out.println("</body>");
+		out.println("</html>");
+	}
+	}
