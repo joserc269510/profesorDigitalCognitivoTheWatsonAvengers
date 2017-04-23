@@ -1,0 +1,10 @@
+Integracion\Speech.class
+wasdev\sample\servlet\SimpleServlet.class
+Integracion\CrearPDF.class
+logicaDeNegocios\Estudiante.class
+Integracion\Speech$1.class
+Servlet\ServletPDF.class
+Servlet\ServletRegistrarEstudiante.class
+Servlet\ServletRegistrarCurso.class
+Integracion\BaseDeDatos.class
+Servlet\ServletSpeech.class

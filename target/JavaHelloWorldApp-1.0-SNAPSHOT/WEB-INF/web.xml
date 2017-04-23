@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+	<display-name>JavaHelloWorldApp</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<description>Generar Speech</description>
+		<display-name />
+		<servlet-name>ServletSpeech</servlet-name>
+		<servlet-class>ServletSpeech</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ServletSpeech</servlet-name>
+		<url-pattern>/generarSpeech</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>Registrar estudiante</description>
+		<display-name />
+		<servlet-name>ServletRegistrarEstudiante</servlet-name>
+		<servlet-class>ServletRegistrarEstudiante</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ServletRegistrarEstudiante</servlet-name>
+		<url-pattern>/registrarEstudiante</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>CREA PDF</description>
+		<display-name />
+		<servlet-name>ServletPDF</servlet-name>
+		<servlet-class>ServletPDF</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ServletPDF</servlet-name>
+		<url-pattern>/crearPDF</url-pattern>
+	</servlet-mapping>
+</web-app>

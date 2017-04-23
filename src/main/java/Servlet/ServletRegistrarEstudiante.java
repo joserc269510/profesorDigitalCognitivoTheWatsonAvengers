@@ -36,21 +36,18 @@ public class ServletRegistrarEstudiante extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	
-	    	 String numeroIdentificacion= request.getParameter("txtIdentificacion");
-	    	 String numeroCarnet= request.getParameter("txtCarnet"); 
-	    	 String fechaNacimiento =request.getParameter("txtNacimiento");
-	    	 String apellido1=request.getParameter("txtApellido1") ;
-	    	 String apellido2= request.getParameter("txtApellido2");
-	    	 String nombre= request.getParameter("txtNombre");
-	    	 String email= request.getParameter("txtEmail");
-	    	 
-	    //	 Estudiante estudiante= new Estudiante(numeroIdentificacion, pNumeroCarnet, pFechaNacimiento, pApellido1, pApellido2, pNombre, pEmail)
-	         BaseDeDatos conexion = new BaseDeDatos();
-	         conexion.insertDelete("insert into estudiante values ()");
-	    	 response.setContentType("text/html");
-	        
+		String numeroIdentificacion= request.getParameter("txtIdentificacion");
+	   	 String numeroCarnet= request.getParameter("txtCarnet"); 
+	   	 String fechaNacimiento =request.getParameter("txtNacimiento");
+	   	 String apellido1=request.getParameter("txtApellido1") ;
+	   	 String apellido2= request.getParameter("txtApellido2");
+	   	 String nombre= request.getParameter("txtNombre");
+	   	 String email= request.getParameter("txtEmail");
+	   	 
+	   //	 Estudiante estudiante= new Estudiante(numeroIdentificacion, pNumeroCarnet, pFechaNacimiento, pApellido1, pApellido2, pNombre, pEmail)
+	        BaseDeDatos conexion = new BaseDeDatos();
+	        conexion.insertDelete("insert into estudiante values ()");
+	   	 response.setContentType("text/html");
 	}
 
 }
