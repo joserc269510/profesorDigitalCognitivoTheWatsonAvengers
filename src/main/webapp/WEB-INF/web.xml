@@ -26,7 +26,7 @@
 		<description>Registrar estudiante</description>
 		<display-name />
 		<servlet-name>ServletRegistrarEstudiante</servlet-name>
-		<servlet-class>C:/Users/Cora/git/profesorDigitalCognitivoTheWatsonAvengers/src/main/java/Servlet/ServletRegistrarEstudiante.java</servlet-class>
+		<servlet-class>Servlet/ServletRegistrarEstudiante</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
