@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Integracion.BaseDeDatos;
+import logicaDeNegocios.Estudiante;
 
 /**
  * Servlet implementation class ServletRegistrarEstudiante
@@ -44,9 +45,9 @@ public class ServletRegistrarEstudiante extends HttpServlet {
 	   	 String nombre= request.getParameter("txtNombre");
 	   	 String email= request.getParameter("txtEmail");
 	   	 
-	   //	 Estudiante estudiante= new Estudiante(numeroIdentificacion, pNumeroCarnet, pFechaNacimiento, pApellido1, pApellido2, pNombre, pEmail)
-	        BaseDeDatos conexion = new BaseDeDatos();
-	        conexion.insertDelete("insert into estudiante values ()");
+	   Estudiante estudiante= new Estudiante();
+	   estudiante.registrarEstudiante(numeroIdentificacion, numeroCarnet, fechaNacimiento, apellido1, apellido2, nombre, email);
+	       
 	   	 response.setContentType("text/html");
 	}
 
