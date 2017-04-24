@@ -72,54 +72,6 @@ jQuery(document).ready(function($) {
 		}, "fast");
 	});
 	
-	
-	// Tweet Feed ------------------------------------------------------ //
-	
-    $("#tweets").tweet({
-        count: 3,
-        username: "ansimuz",
-        callback: tweet_cycle
-    });
-	
-	// Tweet arrows rollover --------------------------------------------- //
-	
-	$("#twitter #prev-tweet").hover(function() { 
-		// on rollover	
-		$(this).stop().animate({ 
-			left: "27" 
-		}, "fast");
-	} , function() { 
-		// on out
-		$(this).stop().animate({
-			left: "30" 
-		}, "fast");
-	});
-	
-	$("#twitter #next-tweet").hover(function() { 
-		// on rollover	
-		$(this).stop().animate({ 
-			right: "27" 
-		}, "fast");
-	} , function() { 
-		// on out
-		$(this).stop().animate({
-			right: "30" 
-		}, "fast");
-	});
-	
-	// Tweet cycle --------------------------------------------- //
-	
-	function tweet_cycle(){
-    	$('#tweets .tweet_list').cycle({ 
-			fx:     'scrollHorz', 
-			speed:  500, 
-			timeout: 0, 
-			pause: 1,
-			next:   '#twitter #next-tweet', 
-			prev:   '#twitter #prev-tweet' 
-		});
-	}
-	
 	// tabs ------------------------------------------------------ //
 	
 	$("ul.tabs").tabs("div.panes > div", {effect: 'fade'});

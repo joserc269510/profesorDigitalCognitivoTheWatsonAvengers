@@ -15,12 +15,12 @@ import com.ibm.watson.developer_cloud.speech_to_text.v1.websocket.BaseRecognizeC
 
 public class Speech {
 	
-	SpeechResults transcript;
+	SpeechResults transcript=null;
 
 	public String voz_a_texto() throws LineUnavailableException, InterruptedException
 	{
 		
-		String texto;
+		String texto=null;
 		int sampleRate = 16000;
 		
 		SpeechToText s2t = new SpeechToText();
@@ -49,22 +49,25 @@ public class Speech {
 		{
 			public void onTranscription(SpeechResults speechResults) 
 			{
-		    transcript=speechResults;
+				transcript=speechResults;
 		       //System.out.println(speechResults);
-		
 		     }
 		});
 
 		System.out.println("Listening to your voice for the next 30s...");
 		Thread.sleep(5 * 1000);
-
-		   
-   	   	texto=transcript.getResults().get(0).getAlternatives().get(0).getTranscript();
+		
+		try{
+   	   	 	texto=transcript.getResults().get(0).getAlternatives().get(0).getTranscript();
+		}catch(Exception e){
+			 texto="Line not supported";
+		}
 		 // closing the WebSockets underlying InputStream will close the WebSocket itself.
 		 line.stop();
 		 line.close();
 		 System.out.println("Fin.");
 		   
 		 return texto;
+		 
 	}
 }
