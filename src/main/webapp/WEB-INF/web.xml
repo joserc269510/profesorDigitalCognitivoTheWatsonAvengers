@@ -23,7 +23,7 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<description>Registrar estudiante</description>
+		<description>Registrar_Estudiante</description>
 		<display-name />
 		<servlet-name>servletRegistrarEstudiante</servlet-name>
 		<servlet-class>servletRegistrarEstudiante</servlet-class>
