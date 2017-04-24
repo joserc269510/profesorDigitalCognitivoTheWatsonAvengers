@@ -25,13 +25,13 @@
 	<servlet>
 		<description>Registrar estudiante</description>
 		<display-name />
-		<servlet-name>ServletRegistrarEstudiante</servlet-name>
-		<servlet-class>Servlet/ServletRegistrarEstudiante</servlet-class>
+		<servlet-name>servletRegistrarEstudiante</servlet-name>
+		<servlet-class>servletRegistrarEstudiante</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>ServletRegistrarEstudiante</servlet-name>
-		<url-pattern>/registrarEstudiante</url-pattern>
+		<servlet-name>servletRegistrarEstudiante</servlet-name>
+		<url-pattern>/servletRegistrarEstudiante</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
